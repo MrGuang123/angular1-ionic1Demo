@@ -1,0 +1,64 @@
+  <ion-view>
+
+  <!-- <div class="bar bar-subheader">
+    <h2 class="title">我是副标题</h2>
+  </div> -->
+  <ion-content class="padding">
+
+    <button class="button">
+      <i class="icon-left ion-load-c"></i> loading...
+    </button>
+    <button class="button icon-left ion-home">Home</button>
+    <button class="button icon-right ion-star button-positive">添加收藏</button>
+    <button class="button icon-right ion-chevron-right button-calm">了解更多</button>
+    <div class="button-bar">
+      <a href="" class="button">first</a>
+      <a href="" class="button">second</a>
+      <a href="" class="button">third</a>
+      <a href="" class="button">fourth</a>
+    </div>
+
+    <div class="list">
+      <a class="item item-icon-left">
+        <i class="icon ion-email"></i>
+        checkEmail
+      </a>
+      <a href="" class="item item-icon-left item-icon-right">
+        <i class="icon ion-chatbubble-working"></i>
+        Call Me
+        <i class="icon ion-ios-telephone-outline"></i>
+      </a>
+      <a href="" class="item item-icon-left">
+        <i class="icon ion-mic-a"></i>
+        record Me
+        <span class="item-note">
+          hahahah
+        </span>
+      </a>
+      <a href="" class="item item-icon-left">
+        <i class="icon ion-person-stalker"></i>
+        record Me
+        <span class="badge badge-assertive">
+          100
+        </span>
+      </a>
+    </div>
+
+    <a class="button icon-left ion-chevron-left button-dark">返回</a>
+    <a class="button button-icon icon ion-settings"></a>
+    <ion-checkbox>中国</ion-checkbox>
+    <ion-checkbox>美国</ion-checkbox>
+    <ion-checkbox>小日本</ion-checkbox>
+    <br>
+    <ion-checkbox ng-repeat="item in obj_DashData" ng-model="item.isSelect">{{item.name}}</ion-checkbox>
+<br>
+    <h1>{{obj_choice.choice}}</h1>
+    <ion-radio ng-repeat="item in arr_radioData" ng-value="item" ng-model="obj_choice.choice">{{item}}</ion-radio>
+
+    <br>
+    现在开关的状态是 ： {{kg}}
+    <ion-toggle ng-model="kg">开关</ion-toggle>
+
+
+  </ion-content>
+</ion-view>

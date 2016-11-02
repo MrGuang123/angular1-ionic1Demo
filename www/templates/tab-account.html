@@ -1,0 +1,69 @@
+<ion-view view-title="Account">
+  <ion-content>
+    <ion-list>
+      <ion-toggle ng-model="settings.enableFriends">
+        Enable Friends
+      </ion-toggle>
+    </ion-list>
+    <a href="" class="item item-avatar">
+      <img src="" alt="">
+      <h2>haha</h2>
+      <p>hellow a haha</p>
+    </a>
+    <div class="card">
+      <div class="item item-text-wrap">
+        This is a basic Card which contains an item that has wrapping text.
+      </div>
+    </div>
+    <div class="card">
+      <div class="item item-text-wrap">
+        For mobile experiences, Cards make it easy to display the same information visually across many different screen sizes. They allow for more control, are flexible, and can even be animated. Cards are usually placed on top of one another, but they can also be used like a "page" and swiped between, left and right.
+      </div>
+    </div>
+    <div for="" class="item item-input">
+      <span class="input-label">username</span>
+      <input type="text">
+    </div>
+    <div class="list list-inset">
+      <input type="date" value="1990-10-21">
+    </div>
+    <label for="" class="toggle">
+      <input type="checkbox">
+      <span class="track">
+        <span class="handle"></span>
+      </span>
+    </label>
+    <ion-list>
+      <ion-checkbox ng-model="filter.red" class="checkbox-assertive">red</ion-checkbox>
+      <ion-checkbox ng-model="filter.yellow">yellow</ion-checkbox>
+      <ion-checkbox ng-model="filter.green">green</ion-checkbox>
+    </ion-list>
+    <ion-list>
+      <ion-radio ng-model="choice" ng-value="'A'">choose A</ion-radio>
+      <ion-radio ng-model="choice" ng-value="'B'">choose B</ion-radio>
+      <ion-radio ng-model="choice" ng-value="'C'">choose C</ion-radio>
+      <ion-radio ng-model="choice" ng-value="'D'">choose D</ion-radio>
+      <ion-radio ng-model="choice" ng-value="'E'">choose E</ion-radio>
+      <ion-radio ng-model="choice" ng-value="'F'">choose F</ion-radio>
+    </ion-list>
+    <ion-range class="range"></ion-range>
+    <div class="row" ng-click="action()">
+      <div class="col">.col</div>
+      <div class="col">.col</div>
+      <div class="col">.col</div>
+      <div class="col">1
+        <br>2
+        <br>3
+        <br>4</div>
+    </div>
+    <div class="row">
+      <div ng-click="show()" class="col col-top">.col</div>
+      <div class="col col-center">.col</div>
+      <div class="col col-bottom">.col</div>
+      <div class="col">1
+        <br>2
+        <br>3
+        <br>4</div>
+    </div>
+  </ion-content>
+</ion-view>

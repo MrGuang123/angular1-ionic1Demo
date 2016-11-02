@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- 插件css引入 -->
+    <link rel="stylesheet" href="lib/swiper/dist/css/swiper.min.css">
+
+    <!-- 功能模块css -->
+    <link rel="stylesheet" href="css/guidePage/guidePage.css">
+    <link rel="stylesheet" href="css/tools/tools.css">
+    <link rel="stylesheet" href="css/home/select.css">
+    <link rel="stylesheet" href="css/video/video.css">
+    <link rel="stylesheet" href="css/DanList/DanList.css">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+
+    <!-- 全局js文件 -->
+    <script src="js/app.js"></script>
+    <script src="js/route.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/config.js"></script>
+
+
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+
+    <!-- 功能模块js -->
+    <script src="areas/guidePage/guidePage_route.js"></script>
+    <script src="areas/guidePage/guidePage_controller.js"></script>
+    <script src="areas/guidePage/guidePage_service.js"></script>
+
+    <script src="areas/home/home_route.js"></script>
+    <script src="areas/home/home_controller.js"></script>
+    <script src="areas/home/home_service.js"></script>
+
+        <script src="areas/home/news/news_route.js"></script>
+        <script src="areas/home/news/news_controller.js"></script>
+        <script src="areas/home/news/news_service.js"></script>
+
+        <script src="areas/home/queAndAns/queAndAns_route.js"></script>
+        <script src="areas/home/queAndAns/queAndAns_controller.js"></script>
+        <script src="areas/home/queAndAns/queAndAns_service.js"></script>
+
+        <script src="areas/home/select/select_route.js"></script>
+        <script src="areas/home/select/select_controller.js"></script>
+        <script src="areas/home/select/select_service.js"></script>
+
+        <script src="areas/home/weal_img/weal_img_route.js"></script>
+        <script src="areas/home/weal_img/weal_img_controller.js"></script>
+        <script src="areas/home/weal_img/weal_img_service.js"></script>
+
+    <script src="areas/tools/tools_route.js"></script>
+    <script src="areas/tools/tools_controller.js"></script>
+    <script src="areas/tools/tools_service.js"></script>
+
+    <script src="areas/tabs/tabs_route.js"></script>
+    <script src="areas/tabs/tabs_controller.js"></script>
+    <script src="areas/tabs/tabs_service.js"></script>
+
+    <script src="areas/video/video_route.js"></script>
+    <script src="areas/video/video_controller.js"></script>
+    <script src="areas/video/video_service.js"></script>
+
+        <script src="areas/video/comment/comment_route.js"></script>
+        <script src="areas/video/comment/comment_controller.js"></script>
+        <script src="areas/video/comment/comment_service.js"></script>
+
+        <script src="areas/video/disport/disport_route.js"></script>
+        <script src="areas/video/disport/disport_controller.js"></script>
+        <script src="areas/video/disport/disport_service.js"></script>
+
+        <script src="areas/video/match/match_route.js"></script>
+        <script src="areas/video/match/match_controller.js"></script>
+        <script src="areas/video/match/match_service.js"></script>
+
+    <script src="areas/detail/detail_route.js"></script>
+    <script src="areas/detail/detail_controller.js"></script>
+    <script src="areas/detail/detail_service.js"></script>
+
+    <script src="areas/danList/danList_route.js"></script>
+    <script src="areas/danList/danList_controller.js"></script>
+    <script src="areas/danList/danList_service.js"></script>
+
+
+    <!-- 插件js文件引入 -->
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/swiper/dist/js/swiper.min.js"></script>
+    <script src="lib/ionic-image-lazy-load/ionic-image-lazy-load.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+
+  </head>
+  <body ng-app="starter">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <!-- <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar> -->
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>

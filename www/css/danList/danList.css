@@ -1,0 +1,67 @@
+.danList .search-row {
+  height:55px;
+  background-color: #333;
+}
+
+.danList .search {
+  margin: 0;
+  padding:0 16px;
+  border:none;
+  border-left:1px solid #ddd;
+}
+.danList .search label {
+}
+
+.danList .search i {
+  font-size:25px;
+  line-height: 24px;
+  padding:0 5px;
+  background-color: #1A9B67;
+  color:#fff;
+  top:5px;
+}
+
+.danList select {
+  height: 34px;
+  width:100%;
+  color:#999;
+  border:none;
+  box-shadow: none;
+}
+
+.danList h2 {
+  position: relative;
+  padding-left:10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size:20px;
+  color:#000;
+  height:40px;
+  line-height: 40px;
+  border-left:5px solid #1A9B67;
+}
+
+.danList .table {
+  text-align: center;
+  width:100%;
+  font-size:12px;
+}
+
+.danList .table th {
+  height:30px;
+  line-height: 30px;
+  background-color: #efefef;
+  font-weight:700;
+  border:1px solid #fff;
+}
+
+.danList .table td {
+  height:40px;
+  line-height: 40px;
+  border-bottom: 1px dotted #ddd;
+}
+
+.danList .table td a {
+  color:#1A9B67;
+  text-decoration: none;
+}

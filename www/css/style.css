@@ -1,0 +1,80 @@
+/* Empty. Add your own CSS if you like */
+ion-content.content-pos {
+  background-color: #f6f6f6;
+}
+.tabs-icon-top > .tabs .tab-item {
+  line-height: 10px;
+}
+
+.home-tab .tabs{
+  top: 0;
+  background-color: #061A35;
+}
+.home-tab .tabs a {
+  color:#BFD0EA;
+}
+.all-tab  .tabs{
+  background-color: #061A35;
+}
+ion-tabs.all-tab .tab-item {
+  color:#BFD0EA;
+}
+
+ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.tab-item-active {
+  color:#4F6F9E;
+}
+
+
+ ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.active,
+  ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.activated {
+  color:#5E7DAC;
+}
+ion-header-bar.bar {
+  background-color: #061A35;
+}
+ion-header-bar.bar button {
+  color:#BFD0EA;
+  border:none;
+  background-color: transparent;
+}
+
+
+
+
+/* 内容区 */
+ion-content.content-pos {
+  top:50px;
+  margin-bottom: 60px;
+}
+
+/* media组件 */
+.media {
+  position: relative;
+  top: 0;
+  left: 0;
+  height:80px;
+  width:100%;
+  padding-left: 110px;
+}
+ .media img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5px;
+  max-width: 104px;
+  max-height: 70px;
+}
+.media h2 {
+  color:#000;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 10px;
+  margin: 0;
+}
+.media p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color:#aaa;
+  padding-right: 20px;
+}

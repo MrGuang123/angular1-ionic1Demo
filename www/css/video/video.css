@@ -1,0 +1,55 @@
+.search {
+  position: relative;
+  margin: 10px;
+}
+.search i {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 35px;
+  line-height: 43px;
+}
+
+.video ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap:wrap;
+  margin: 0 10px;
+  align-content:flex-start;
+}
+.video ul li {
+  display:flex;
+  flex-wrap:wrap;
+  width:31%;
+  height:31%;
+  box-sizing: border-box;
+  margin-right: 3.5%;
+  margin-bottom: 3.5%;
+  position: relative;
+}
+.video ul li:nth-child(3n){
+  margin-right:0;
+}
+.video ul li .img {
+  width:100%;
+  height:70%;
+  background-size: cover;
+}
+.video ul li .image-loader-container {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+.video ul li .image-loader-container svg {
+  width: 50%;
+  height: 50%;
+}
+.video ul li p {
+  display:inline-block;
+  vertical-align: top;
+  width:100%;
+  height:30%;
+  padding-top:10px;
+  text-align: center;
+}
