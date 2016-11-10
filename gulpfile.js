@@ -6,6 +6,32 @@ var sass = require('gulp-sass');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sh = require('shelljs');
+//后来添加代理需要的替换模块
+var replace = require('replace');
+var replaceFile = ['./www/js/app.js'];
+
+//添加代理
+gulp.task('add-proxy',function(){
+  return replace({
+    regex : 'http://localhost:8080/test/',
+    replacement : 'http://localhost:8100/test/',
+    paths : replaceFile,
+    recursive : false,
+    silent : false
+  })
+})
+
+//移除代理
+gulp.task('remove-proxy',function(){
+  return replace({
+    regex : 'http://localhost:8100/test/',
+    replacement : 'http://localhost:8080/test/',
+    paths : replaceFile,
+    recursive : false,
+    silent : false
+  })
+})
+
 
 var paths = {
   sass: ['./scss/**/*.scss']

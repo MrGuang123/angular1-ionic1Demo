@@ -1,8 +1,9 @@
-angular.module('starter.controllers', ['ionic'])
+angular.module('starter.controllers', ['ionic','ApiProxy.constant'])
 
   .controller('StarterController',['$scope',function($scope){
 
   }])
+
 
 /*.controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called
